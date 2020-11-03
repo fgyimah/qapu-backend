@@ -36,6 +36,10 @@ export const User = new Schema({
     type: Boolean,
     default: false,
   },
+  password: {
+    type: String,
+    required: true,
+  },
   faculty: {
     type: Schema.Types.ObjectId,
     ref: FACULTY,

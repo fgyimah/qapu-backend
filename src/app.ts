@@ -4,6 +4,7 @@ import compression from 'compression';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import createApi from './api';
+import { handleError, renderError } from './error';
 
 export default function bootstrapApp(): express.Express {
   const app = express();
@@ -20,6 +21,10 @@ export default function bootstrapApp(): express.Express {
 
   // create api handlers
   createApi(app);
+
+  // error handlers
+  app.use(handleError);
+  app.use(renderError);
 
   return app;
 }

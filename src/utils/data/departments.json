@@ -1,0 +1,57 @@
+[
+  {
+    "_id": "5fa09a2290303d01d621a82d",
+    "name": "Department Of Computer Engineering",
+    "faculty": "5fa07f7269661e06cb0028cf"
+  },
+  {
+    "_id": "5fa09a28bc4f831ec56bc7da",
+    "name": "Department Of Electrical and Electronics Engineering",
+    "faculty": "5fa07f7269661e06cb0028cf"
+  },
+  {
+    "_id": "5fa09a2eda25cf5f429bb3fa",
+    "name": "Department Of Telecommunication Engineering",
+    "faculty": "5fa07f7269661e06cb0028cf"
+  },
+  {
+    "_id": "5fa09a35870db26c449686a4",
+    "name": "Department Of Civil Engineering",
+    "faculty": "5fa07f7fa231ac3906a6326e"
+  },
+  {
+    "_id": "5fa09a3c7e4572825c9ae73c",
+    "name": "Department Of Geological Engineering",
+    "faculty": "5fa07f7fa231ac3906a6326e"
+  },
+  {
+    "_id": "5fa0999b6790c191395b042b",
+    "name": "Department Of Geomatic Engineering",
+    "faculty": "5fa07f7fa231ac3906a6326e"
+  },
+  {
+    "_id": "5fa099a50ff5887158cea1e0",
+    "name": "Department Of Petroleum Engineering",
+    "faculty": "5fa07f7fa231ac3906a6326e"
+  },
+  {
+    "_id": "5fa099ac65cfa122c73ed1b2",
+    "name": "Department Of Agricultural Engineering",
+    "faculty": "5fa07f87ba0e63050fa9ff1d"
+  },
+  {
+    "_id": "5fa099b2db812d343424bb1d",
+    "name": "Department Of Chemical Engineering",
+    "faculty": "5fa07f87ba0e63050fa9ff1d"
+  },
+  {
+    "_id": "5fa099b9285afbfd8f9b30e8",
+    "name": "Department Of Materials Engineering",
+    "faculty": "5fa07f87ba0e63050fa9ff1d"
+  },
+  {
+    "_id": "5fa099bfbf55122af6e94b83",
+    "name": "Department Of Mechanical Engineering",
+    "faculty": "5fa07f87ba0e63050fa9ff1d"
+  }
+]

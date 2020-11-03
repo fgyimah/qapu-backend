@@ -4,8 +4,8 @@ import { COLLECTION, Department } from '../schemas/Department';
 
 export const DepartmentModel = mongoose.model<Department>(COLLECTION, Department);
 
-export async function getAllDepartments(): Promise<Department[]> {
-  return await DepartmentModel.find();
+export async function getAllDepartments(faculty: string): Promise<Department[]> {
+  return await DepartmentModel.find({ faculty });
 }
 
 export async function getDepartmentById(id: string): Promise<Department> {

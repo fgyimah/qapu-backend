@@ -34,12 +34,12 @@ export async function loginUser(email: string, password: string): Promise<User> 
   const user = await UserModel.findOne({ email });
 
   if (!user) {
-    throw new NotFound();
+    throw new NotFound('No user with given credentials');
   }
 
   const passMatch = await PasswordService.compare(user.password, password);
   if (!passMatch) {
-    throw new BadRequest();
+    throw new BadRequest('Invalid credentials');
   }
 
   return user;
@@ -49,6 +49,6 @@ export async function deleteUser(id: string) {
   const user = await UserModel.findByIdAndDelete(id);
 
   if (!user) {
-    throw new NotFound();
+    throw new NotFound('User not found');
   }
 }

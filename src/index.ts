@@ -4,6 +4,7 @@ config();
 
 import mongoose from 'mongoose';
 import bootstrapApp from './app';
+import { populateDb } from './utils/populate-db';
 
 (async () => {
   const app = bootstrapApp();
@@ -13,7 +14,10 @@ import bootstrapApp from './app';
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
-  console.log('Connected to databse');
+  console.log('Connected to database');
+
+  await populateDb();
+  console.log('DB populated....');
 
   const server = new Server(app);
   const port = process.env.PORT || 4000;

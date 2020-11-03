@@ -5,9 +5,9 @@ import * as validation from '../validations/department-validation';
 
 const router = Router();
 
-router.get('/', async (_req, res, next) => {
+router.get('/:id', async (req, res, next) => {
   try {
-    const departments = await Model.getAllDepartments();
+    const departments = await Model.getAllDepartments(req.params.id);
     res.json(departments);
   } catch (error) {
     next(error);

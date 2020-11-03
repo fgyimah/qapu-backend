@@ -4,8 +4,8 @@ import { COLLECTION, Program } from '../schemas/Program';
 
 export const ProgramModel = mongoose.model<Program>(COLLECTION, Program);
 
-export async function getAllPrograms(): Promise<Program[]> {
-  return await ProgramModel.find();
+export async function getAllPrograms(department: string): Promise<Program[]> {
+  return await ProgramModel.find({ department });
 }
 
 export async function getProgramById(id: string): Promise<Program> {
