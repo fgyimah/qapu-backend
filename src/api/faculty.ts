@@ -25,6 +25,15 @@ router.post('/', secure(AuthRole.SUPER_ADMIN), async (req, res, next) => {
   }
 });
 
+router.get('/:id', async (req, res, next) => {
+  try {
+    const faculty = await Model.getFacultyById(req.params.id);
+    res.json(faculty);
+  } catch (error) {
+    next(error);
+  }
+});
+
 router.put('/:id', secure(AuthRole.SUPER_ADMIN), async (req, res, next) => {
   try {
     await validation.validateFaculty(req.body);
