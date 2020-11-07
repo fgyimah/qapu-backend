@@ -6,6 +6,7 @@ import { PasswordService } from '../services/password-service';
 
 import faculties from './data/faculties.json';
 import departments from './data/departments.json';
+import programs from './data/programs.json';
 
 export async function populateDb() {
   // populate faculties
@@ -18,7 +19,7 @@ export async function populateDb() {
 
   const count = await ProgramModel.countDocuments({});
   if (count === 0) {
-    await ProgramModel.insertMany([]);
+    await ProgramModel.insertMany(programs);
   }
 
   const user = await UserModel.findOne({ isSuperAdmin: true });
