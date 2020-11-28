@@ -14,6 +14,15 @@ router.get('/:id', async (req, res, next) => {
   }
 });
 
+router.get('/:id/program', async (req, res, next) => {
+  try {
+    const program = await Model.getProgramById(req.params.id);
+    res.json(program);
+  } catch (error) {
+    next(error);
+  }
+});
+
 router.post('/', secure(AuthRole.SUPER_ADMIN), async (req, res, next) => {
   try {
     await validation.validateProgram(req.body);
