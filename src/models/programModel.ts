@@ -39,3 +39,39 @@ export async function deleteProgram(id: string) {
     throw new NotFound();
   }
 }
+
+export async function addAccreditationMaterial(id: string, material: string): Promise<Program> {
+  const program = await ProgramModel.findById(id);
+
+  if (!program) {
+    throw new NotFound();
+  }
+
+  const materials = program.accreditationMaterials || [];
+  materials.push(material);
+
+  program.accreditationMaterials = materials;
+  await program.save();
+
+  return program;
+}
+
+export async function deleteAccreditationMaterial(id: string, material: string): Promise<Program> {
+  const program = await ProgramModel.findById(id);
+
+  if (!program) {
+    throw new NotFound();
+  }
+
+  const materials = program.accreditationMaterials || [];
+  const index = materials.indexOf(material);
+
+  if (index > -1) {
+    materials.splice(index, 1);
+  }
+
+  program.accreditationMaterials = materials;
+  await program.save();
+
+  return program;
+}

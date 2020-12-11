@@ -25,7 +25,7 @@ export const secure = (roles: AuthRole[] | AuthRole) => {
       const bearer = req.headers['authorization'];
 
       if (typeof bearer !== 'string') {
-        throw new JsonWebTokenError('Authorization signature requred');
+        throw new JsonWebTokenError('Authorization signature required');
       }
 
       const bearerArray = bearer.split(' ');
