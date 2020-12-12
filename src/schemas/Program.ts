@@ -9,7 +9,7 @@ export interface Program extends Document {
   type: 'undergraduate' | 'postgraduate';
   nextAccreditationDate?: Date;
   accreditationMaterials?: string[];
-  accreditationRequirements?: string;
+  accreditationRequirements?: string[];
   department: Department | Department['_id'];
 }
 
@@ -28,7 +28,7 @@ export const Program = new Schema({
   },
   nextAccreditationDate: Date,
   accreditationMaterials: [String],
-  accreditationRequirements: String,
+  accreditationRequirements: [String],
   department: {
     type: Schema.Types.ObjectId,
     ref: DEPARTMENT,
