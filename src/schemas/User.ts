@@ -13,6 +13,7 @@ export interface User extends Document {
   forgotPasswordTokenExpires?: Date;
   faculty?: Faculty | Faculty['_id'];
   isSuperAdmin: boolean;
+  visited: boolean;
 }
 
 export const User = new Schema({
@@ -52,5 +53,9 @@ export const User = new Schema({
   forgotPasswordTokenExpires: {
     type: Date,
     required: false,
+  },
+  visited: {
+    type: Boolean,
+    default: false,
   },
 });

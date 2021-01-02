@@ -40,6 +40,7 @@ export async function populateDb() {
       password: hashed,
       avatar,
       isSuperAdmin: true,
+      visited: false,
     });
   }
 }

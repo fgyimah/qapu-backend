@@ -52,3 +52,28 @@ export async function deleteUser(id: string) {
     throw new NotFound('User not found');
   }
 }
+
+export async function updateUserPassword(
+  userId: string,
+  newPassword: string,
+  oldPassword: string
+): Promise<User> {
+  const user = await UserModel.findById(userId);
+
+  if (!user) {
+    throw new NotFound('User not found');
+  }
+
+  const passMatch = await PasswordService.compare(user.password, oldPassword);
+  if (!passMatch) {
+    throw new BadRequest('Invalid old password');
+  }
+
+  const hashed = await PasswordService.toHash(newPassword);
+  user.password = hashed;
+  user.visited = true;
+
+  await user.save();
+
+  return user;
+}

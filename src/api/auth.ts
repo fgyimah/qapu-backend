@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { AuthRole } from '../middlewares/auth';
+import { AuthRole, secure } from '../middlewares/auth';
 import { signToken } from '../utils/security';
 import * as Model from '../models/userModel';
 import * as validations from '../validations/auth-validations';
@@ -38,5 +38,24 @@ router.post('/login', async (req, res, next) => {
     next(error);
   }
 });
+
+router.put(
+  '/update-password',
+  secure([AuthRole.ADMIN, AuthRole.SUPER_ADMIN]),
+  async (req, res, next) => {
+    try {
+      await validations.validateUpdatePassword(req.body);
+      const userId = res.locals.jwt.jti;
+      const user = await Model.updateUserPassword(
+        userId,
+        req.body.newPassword,
+        req.body.oldPassword
+      );
+      res.json(user);
+    } catch (error) {
+      next(error);
+    }
+  }
+);
 
 export default { path: '/auth', router };

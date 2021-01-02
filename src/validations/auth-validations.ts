@@ -19,3 +19,11 @@ export async function validateRegisterUser(data: any) {
 
   return await schema.validateAsync(data, { abortEarly: false });
 }
+
+export async function validateUpdatePassword(data: any) {
+  const schema = Joi.object({
+    newPassword: Joi.string().min(8).max(32).required(),
+    oldPassword: Joi.string().required(),
+  });
+  return await schema.validateAsync(data, { abortEarly: false });
+}
