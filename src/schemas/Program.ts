@@ -12,6 +12,7 @@ export interface Program extends Document {
   accreditationRequirements?: string[];
   department: Department | Department['_id'];
   stage?: string;
+  hasAccreditationProcessStarted?: boolean;
   isProgramOldOrNew?: string;
   hasCertificateIssued?: boolean;
 }
@@ -35,6 +36,7 @@ export const Program = new Schema({
   stage: String,
   isProgramNewOrOld: String,
   hasCertificateIssued: Boolean,
+  hasAccreditationProcessStarted: Boolean,
   department: {
     type: Schema.Types.ObjectId,
     ref: DEPARTMENT,

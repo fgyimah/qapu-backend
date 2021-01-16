@@ -3,127 +3,252 @@
     "_id": "5fa6b3abcd0d382daa230eba",
     "name": "BSc. Civil Engineering",
     "type": "undergraduate",
-    "department": "5fa09a35870db26c449686a4"
+    "department": "5fa09a35870db26c449686a4",
+    "isProgramOldOrNew": "Old",
+    "stage": "Submitted Application to QAPU",
+    "isCertificateIssued": false,
+    "hasAccreditationProcessStarted": true
   },
   {
     "_id": "5fa6b3bb16538d4180a32e46",
-    "name": "MPhil Environmental Sanitation and Waste Management",
+    "name": "MSC Environmental Sanitation and Waste Management",
     "type": "postgraduate",
-    "department": "5fa09a35870db26c449686a4"
+    "department": "5fa09a35870db26c449686a4",
+    "isProgramOldOrNew": "New",
+    "stage": "Awaiting NAB Certificate. International certification from AQAS acquired",
+    "isCertificateIssued": false,
+    "hasAccreditationProcessStarted": true
   },
   {
-    "_id": "5fa6b3c1fc7de70d11486a8e",
-    "name": "MPhil Water Resources Engineering and Management",
+    "_id": "5ffc4a37f58e49c2f1a89280",
+    "name": "PhD Environmental Sanitation and Waste Management",
     "type": "postgraduate",
-    "department": "5fa09a35870db26c449686a4"
+    "department": "5fa09a35870db26c449686a4",
+    "isProgramOldOrNew": "New",
+    "stage": "",
+    "isCertificateIssued": true,
+    "hasAccreditationProcessStarted": true,
+    "nextAccreditationDate": "2023-07-01"
   },
   {
     "_id": "5fa6b3cb5b38accafb34aae4",
     "name": "MSc Water Supply and Environmental Sanitation",
     "type": "postgraduate",
-    "department": "5fa09a35870db26c449686a4"
+    "department": "5fa09a35870db26c449686a4",
+    "isProgramOldOrNew": "New",
+    "stage": "Awaiting NAB Certificate. International certification from AQAS acquired",
+    "isCertificateIssued": false,
+    "hasAccreditationProcessStarted": true
   },
   {
     "_id": "5fa6b3d2d631651a61d7cb5d",
     "name": "MSc Water Resources Engineering and Management",
     "type": "postgraduate",
-    "department": "5fa09a35870db26c449686a4"
-  },
-  {
-    "_id": "5fa6b3d9088c6eef41e54503",
-    "name": "PhD Environmental Sanitation and Waste Management",
-    "type": "postgraduate",
-    "department": "5fa09a35870db26c449686a4"
+    "department": "5fa09a35870db26c449686a4",
+    "isProgramOldOrNew": "New",
+    "stage": "",
+    "isCertificateIssued": false,
+    "hasAccreditationProcessStarted": true
   },
   {
     "_id": "5fa6b3e2e30e75a3be6a4aff",
     "name": "PhD Water Supply and Treatment Technology",
     "type": "postgraduate",
-    "department": "5fa09a35870db26c449686a4"
+    "department": "5fa09a35870db26c449686a4",
+    "isProgramOldOrNew": "New",
+    "stage": "Awaiting NAB Certificate. International certification from AQAS acquired",
+    "isCertificateIssued": false,
+    "hasAccreditationProcessStarted": true
   },
   {
     "_id": "5fa6b3e92ddbb810931e0f4b",
     "name": "PhD Water Resources Engineering and Management",
     "type": "postgraduate",
-    "department": "5fa09a35870db26c449686a4"
+    "department": "5fa09a35870db26c449686a4",
+    "isProgramOldOrNew": "New",
+    "stage": "Awaiting NAB Certificate. International certification from AQAS acquired",
+    "isCertificateIssued": false,
+    "hasAccreditationProcessStarted": true
   },
   {
     "_id": "5fa6b3f0d89b9d91284afcb1",
     "name": "MSc Water Supply and Environmental Sanitation",
     "type": "postgraduate",
-    "department": "5fa09a35870db26c449686a4"
+    "department": "5fa09a35870db26c449686a4",
+    "isProgramOldOrNew": "New",
+    "stage": "Awaiting NAB Certificate. International certification from AQAS acquired",
+    "isCertificateIssued": false,
+    "hasAccreditationProcessStarted": true
   },
   {
     "_id": "5fa6b3f7254f2766b65070d0",
     "name": "MSc Water Resources Engineering and Management",
     "type": "postgraduate",
-    "department": "5fa09a35870db26c449686a4"
+    "department": "5fa09a35870db26c449686a4",
+    "isProgramOldOrNew": "New",
+    "stage": "Awaiting NAB Certificate. International certification from AQAS acquired",
+    "isCertificateIssued": false,
+    "hasAccreditationProcessStarted": true
   },
   {
     "_id": "5fa6b3fe505181a7bebcdd1a",
     "name": "MSc Road and Transportation Engineering",
     "type": "postgraduate",
-    "department": "5fa09a35870db26c449686a4"
+    "department": "5fa09a35870db26c449686a4",
+    "isProgramOldOrNew": "New",
+    "stage": "Response successfully submitted to NAB",
+    "isCertificateIssued": false,
+    "hasAccreditationProcessStarted": false
+  },
+  {
+    "_id": "5ffc4a0414350f2d637fa1bd",
+    "name": "PhD Road and Transportation Engineering",
+    "type": "postgraduate",
+    "department": "5fa09a35870db26c449686a4",
+    "isProgramOldOrNew": "New",
+    "stage": "Response successfully submitted to NAB",
+    "isCertificateIssued": false,
+    "hasAccreditationProcessStarted": false
+  },
+  {
+    "_id": "5ffc4ea3c05370ba3c1dba2d",
+    "name": "MPhil. Geotechnical",
+    "type": "postgraduate",
+    "department": "5fa09a35870db26c449686a4",
+    "isProgramOldOrNew": "New",
+    "stage": "Response successfully submitted to NAB",
+    "isCertificateIssued": false,
+    "hasAccreditationProcessStarted": true
+  },
+  {
+    "_id": "5ffc4e9de4b5ad72f15a043d",
+    "name": "MSc. Geotechnical",
+    "type": "postgraduate",
+    "department": "5fa09a35870db26c449686a4",
+    "isProgramOldOrNew": "New",
+    "stage": "Response successfully submitted to NAB",
+    "isCertificateIssued": false,
+    "hasAccreditationProcessStarted": true
+  },
+  {
+    "_id": "5ffc4e979176594051c6bc17",
+    "name": "PhD Geotechnical",
+    "type": "postgraduate",
+    "department": "5fa09a35870db26c449686a4",
+    "isProgramOldOrNew": "New",
+    "stage": "Response successfully submitted to NAB",
+    "isCertificateIssued": false,
+    "hasAccreditationProcessStarted": true
   },
   {
     "_id": "5fa6b4050f25e3da5cd47fc9",
     "name": "BSc Geological Engineering",
     "type": "undergraduate",
-    "department": "5fa09a3c7e4572825c9ae73c"
+    "department": "5fa09a3c7e4572825c9ae73c",
+    "accredited": true,
+    "isProgramOldOrNew": "Old",
+    "stage": "",
+    "isCertificateIssued": false,
+    "hasAccreditationProcessStarted": true,
+    "nextAccreditationDate": "2023-05-01"
   },
   {
     "_id": "5fa6b40c876037fc2aec1664",
     "name": "PhD Geological Engineering",
     "type": "postgraduate",
-    "department": "5fa09a3c7e4572825c9ae73c"
+    "isProgramOldOrNew": "New",
+    "department": "5fa09a3c7e4572825c9ae73c",
+    "stage": "Response successfully submitted to NAB",
+    "accredited": true,
+    "isCertificateIssued": true,
+    "hasAccreditationProcessStarted": false
   },
   {
     "_id": "5fa6b412f9619402d51aee1d",
     "name": "MSc Geophysical Engineering",
     "type": "postgraduate",
-    "department": "5fa09a3c7e4572825c9ae73c"
+    "department": "5fa09a3c7e4572825c9ae73c",
+    "isProgramOldOrNew": "New",
+    "accredited": true,
+    "isCertificateIssued": true,
+    "stage": "Response successfully submitted to NAB",
+    "hasAccreditationProcessStarted": true,
+    "nextAccreditationDate": "2019-11-19"
   },
   {
     "_id": "5fa6b41ace0f7baf2b5a4899",
     "name": "MPhil Geological Engineering",
     "type": "postgraduate",
-    "department": "5fa09a3c7e4572825c9ae73c"
+    "isProgramOldOrNew": "New",
+    "department": "5fa09a3c7e4572825c9ae73c",
+    "accredited": false,
+    "isCertificateIssued": false,
+    "hasAccreditationProcessStarted": false,
+    "nextAccreditationDate": "2020-08-01"
   },
   {
     "_id": "5fa6b420d33013014d24c4ab",
     "name": "BSc Geomatic Engineering",
     "type": "undergraduate",
-    "department": "5fa0999b6790c191395b042b"
+    "department": "5fa0999b6790c191395b042b",
+    "isProgramOldOrNew": "Old",
+    "stage": "",
+    "accredited": true,
+    "isCertificateIssued": true,
+    "hasAccreditationProcessStarted": false,
+    "nextAccreditationDate": "2021-08-01"
   },
   {
     "_id": "5fa6b428e61a83063fe4f81c",
     "name": "MSc/MPhil Geomatic Engineering",
     "type": "postgraduate",
-    "department": "5fa0999b6790c191395b042b"
+    "department": "5fa0999b6790c191395b042b",
+    "accredited": true,
+    "isCertificateIssued": true,
+    "hasAccreditationProcessStarted": false,
+    "nextAccreditationDate": "2023-05-01"
   },
   {
     "_id": "5fa6b4304b4ff9ea38cce6d2",
     "name": "PhD Geomatic Engineering",
     "type": "postgraduate",
-    "department": "5fa0999b6790c191395b042b"
+    "department": "5fa0999b6790c191395b042b",
+    "accredited": true,
+    "isCertificateIssued": true,
+    "hasAccreditationProcessStarted": false,
+    "nextAccreditationDate": "2023-05-01"
   },
   {
     "_id": "5fa6b43ac78728f967289bf2",
     "name": "BSc Petroleum Engineering",
     "type": "undergraduate",
-    "department": "5fa099a50ff5887158cea1e0"
+    "department": "5fa099a50ff5887158cea1e0",
+    "isProgramOldOrNew": "New",
+    "stage": "NAB yet to visit",
+    "isCertificateIssued": false,
+    "hasAccreditationProcessStarted": false
   },
   {
     "_id": "5fa6b445607387f5ee29f21c",
     "name": "BSc Biomedical Engineering",
     "type": "undergraduate",
-    "department": "5fa09a2290303d01d621a82d"
+    "department": "5fa09a2290303d01d621a82d",
+    "isProgramOldOrNew": "Old",
+    "stage": "Response successfully submitted to NAB",
+    "isCertificateIssued": false,
+    "hasAccreditationProcessStarted": true
   },
   {
     "_id": "5fa6b4513814f0a6ece672fd",
     "name": "BSc Computer Engineering",
     "type": "undergraduate",
-    "department": "5fa09a2290303d01d621a82d"
+    "department": "5fa09a2290303d01d621a82d",
+    "isProgramOldOrNew": "Old",
+    "stage": "",
+    "accredited": true,
+    "isCertificateIssued": true,
+    "hasAccreditationProcessStarted": false,
+    "nextAccreditationDate": "2025-08-01"
   },
   {
     "_id": "5fa6b4561673acf4c79a034d",
@@ -135,43 +260,61 @@
     "_id": "5fa6b45cb1c846c69bc4c8b3",
     "name": "MPhil Computer Engineering",
     "type": "postgraduate",
-    "department": "5fa09a2290303d01d621a82d"
+    "department": "5fa09a2290303d01d621a82d",
+    "isProgramOldOrNew": "Old",
+    "stage": "",
+    "isCertificateIssued": true,
+    "hasAccreditationProcessStarted": false,
+    "nextAccreditationDate": "2023-07-01"
   },
   {
-    "_id": "5fa6b4649743a54596939248",
-    "name": "MEng Information and Communication Technology",
+    "_id": "6003527b8f7fee453a3a1d60",
+    "name": "PhD Computer Engineering",
     "type": "postgraduate",
-    "department": "5fa09a2290303d01d621a82d"
+    "department": "5fa09a2290303d01d621a82d",
+    "isProgramOldOrNew": "Old",
+    "stage": "",
+    "isCertificateIssued": true,
+    "hasAccreditationProcessStarted": false,
+    "nextAccreditationDate": "2023-07-01"
   },
   {
     "_id": "5fa6b46b520b1ffa0a579395",
     "name": "BSc Electrical/Electronic Engineering",
     "type": "undergraduate",
-    "department": "5fa09a28bc4f831ec56bc7da"
+    "department": "5fa09a28bc4f831ec56bc7da",
+    "isProgramOldOrNew": "Old",
+    "stage": "",
+    "accredited": true,
+    "isCertificateIssued": true,
+    "hasAccreditationProcessStarted": false,
+    "nextAccreditationDate": "2025-08-01"
   },
   {
     "_id": "5fa6b471adb077e4ee905a24",
-    "name": "MSc Electrical Power Systems",
+    "name": "MPhil Power Systems Engineering",
     "type": "postgraduate",
-    "department": "5fa09a28bc4f831ec56bc7da"
-  },
-  {
-    "_id": "5fa6b47821ab7e9448c9864c",
-    "name": "MPhil Electric & Electronic Engineering",
-    "type": "postgraduate",
-    "department": "5fa09a28bc4f831ec56bc7da"
+    "department": "5fa09a28bc4f831ec56bc7da",
+    "isProgramOldOrNew": "New"
   },
   {
     "_id": "5fa6b47fccd7cf4bcde09c93",
     "name": "PhD Electric & Electronic Engineering",
     "type": "postgraduate",
-    "department": "5fa09a28bc4f831ec56bc7da"
+    "department": "5fa09a28bc4f831ec56bc7da",
+    "isProgramOldOrNew": "New"
   },
   {
     "_id": "5fa6b4879775ca83565ae3eb",
     "name": "BSc Telecommunication Engineering",
     "type": "undergraduate",
-    "department": "5fa09a2eda25cf5f429bb3fa"
+    "department": "5fa09a2eda25cf5f429bb3fa",
+    "isProgramOldOrNew": "Old",
+    "stage": "",
+    "accredited": true,
+    "isCertificateIssued": true,
+    "hasAccreditationProcessStarted": false,
+    "nextAccreditationDate": "2023-07-01"
   },
   {
     "_id": "5fa6b48d49e4d03d7bf3868b",
@@ -201,12 +344,6 @@
     "_id": "5fa6b4adeab7ea3eab85934c",
     "name": "BSc Aerospace Engineering",
     "type": "undergraduate",
-    "department": "5fa099bfbf55122af6e94b83"
-  },
-  {
-    "_id": "5fa6b4b3ae47991fba923de2",
-    "name": "PhD Sustainable Energy Technologies (PhD SETs)",
-    "type": "postgraduate",
     "department": "5fa099bfbf55122af6e94b83"
   },
   {

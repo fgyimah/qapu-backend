@@ -17,8 +17,14 @@ export async function populateDb() {
   await DepartmentModel.deleteMany({});
   await DepartmentModel.insertMany(departments);
 
-  const count = await ProgramModel.countDocuments({});
-  if (count === 0) {
+  const insertFresh = process.env.INSERT_FRESH;
+  if (!insertFresh) {
+    const count = await ProgramModel.countDocuments({});
+    if (count === 0) {
+      await ProgramModel.insertMany(programs);
+    }
+  } else {
+    await ProgramModel.deleteMany({});
     await ProgramModel.insertMany(programs);
   }
 
