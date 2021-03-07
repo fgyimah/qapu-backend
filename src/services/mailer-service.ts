@@ -9,7 +9,7 @@ SGMail.setApiKey(process.env.SENDGRID_API_KEY!);
  * @param program - Program with accreditation period almost up
  * @param nextAccreditationDate - Date which the program will be required to submit another accreditation response
  */
-export const sendAccreditationAlert = async (program: Program, nextAccreditationDate: Date) => {
+export const sendAccreditationAlert = async (program: Program) => {
   const mails: string[] = [process.env.SUPER_ADMIN_EMAIL!];
   if (program.email) mails.push(program.email);
 
@@ -22,7 +22,7 @@ export const sendAccreditationAlert = async (program: Program, nextAccreditation
         text: `Good day
               This email is to notify you that the accreditation of ${
                 program.name
-              } will be expired on ${nextAccreditationDate.toDateString()}
+              } will be expired on ${program.nextAccreditationDate?.toDateString()}
               
               You are hereby advised to begin the necessary steps to ensure the program has all accreditation measures in place for the process to begin
               

@@ -1,10 +1,13 @@
 import { Server } from 'http';
-import { config } from 'dotenv';
-config();
+import { config as configDotEnv } from 'dotenv';
+
+// configure env variables
+configDotEnv();
 
 import mongoose from 'mongoose';
 import bootstrapApp from './app';
 import { populateDb } from './utils/populate-db';
+import job from './utils/mailer-job';
 
 (async () => {
   const app = bootstrapApp();
@@ -25,6 +28,8 @@ import { populateDb } from './utils/populate-db';
   server.listen(port);
 
   server.on('listening', () => {
+    // start job
+    job.start();
     console.log(`Server running on port ${port}`);
   });
 })().catch((err) => {
