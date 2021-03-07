@@ -9,7 +9,7 @@ export async function getAllPrograms(department: string): Promise<Program[]> {
 }
 
 export async function getProgramById(id: string): Promise<Program> {
-  const program = await ProgramModel.findById(id);
+  const program = await ProgramModel.findById(id).populate('department');
 
   if (!program) {
     throw new NotFound();

@@ -15,6 +15,7 @@ export interface Program extends Document {
   hasAccreditationProcessStarted?: boolean;
   isProgramOldOrNew?: string;
   hasCertificateIssued?: boolean;
+  email?: string;
 }
 
 export const Program = new Schema({
@@ -42,4 +43,5 @@ export const Program = new Schema({
     ref: DEPARTMENT,
     required: true,
   },
+  email: String,
 });
