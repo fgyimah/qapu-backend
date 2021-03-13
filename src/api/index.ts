@@ -2,6 +2,7 @@ import { Express, Router } from 'express';
 import auth from './auth';
 import department from './department';
 import faculty from './faculty';
+import misc from './misc';
 import programs from './programs';
 
 export interface Route {
@@ -9,7 +10,7 @@ export interface Route {
   router: Router;
 }
 
-const routes: Route[] = [auth, faculty, department, programs];
+const routes: Route[] = [auth, faculty, department, programs, misc];
 
 export default function createApi(app: Express) {
   routes.forEach((route) => {

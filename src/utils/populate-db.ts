@@ -28,25 +28,23 @@ export async function populateDb() {
     await ProgramModel.insertMany(programs);
   }
 
-  const user = await UserModel.findOne({ isSuperAdmin: true });
-  if (!user) {
-    const username = process.env.SUPER_ADMIN_USERNAME!;
-    const email = process.env.SUPER_ADMIN_EMAIL!;
-    const fullName = process.env.SUPER_ADMIN_FULL_NAME!;
-    const password = process.env.SUPER_ADMIN_PASSWORD!;
-    const avatar = process.env.SUPER_ADMIN_AVATAR_URL;
+  await UserModel.deleteMany({});
+  const username = process.env.SUPER_ADMIN_USERNAME!;
+  const email = process.env.SUPER_ADMIN_EMAIL!;
+  const fullName = process.env.SUPER_ADMIN_FULL_NAME!;
+  const password = process.env.SUPER_ADMIN_PASSWORD!;
+  const avatar = process.env.SUPER_ADMIN_AVATAR_URL;
 
-    // hash password
-    const hashed = await PasswordService.toHash(password);
+  // hash password
+  const hashed = await PasswordService.toHash(password);
 
-    await UserModel.create({
-      username,
-      fullName,
-      email,
-      password: hashed,
-      avatar,
-      isSuperAdmin: true,
-      visited: false,
-    });
-  }
+  await UserModel.create({
+    username,
+    fullName,
+    email,
+    password: hashed,
+    avatar,
+    isSuperAdmin: true,
+    visited: false,
+  });
 }

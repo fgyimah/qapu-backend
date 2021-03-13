@@ -4,8 +4,50 @@ import { COLLECTION, Faculty } from '../schemas/Faculty';
 
 export const FacultyModel = mongoose.model<Faculty>(COLLECTION, Faculty);
 
-export async function getAllFaculties(): Promise<Faculty[]> {
-  return await FacultyModel.find();
+export async function getAllFaculties(): Promise<any[]> {
+  let data = await FacultyModel.aggregate([
+    {
+      $lookup: {
+        from: 'departments',
+        localField: '_id',
+        foreignField: 'faculty',
+        as: 'departments',
+      },
+    },
+    {
+      $lookup: {
+        from: 'programs',
+        localField: 'departments._id',
+        foreignField: 'department',
+        as: 'programs',
+      },
+    },
+    {
+      $addFields: {
+        'departments.programs': {
+          $map: {
+            input: '$programs',
+            in: {
+              $mergeObjects: [
+                '$departments',
+                {
+                  programs: {
+                    $arrayElemAt: [
+                      '$programs',
+                      {
+                        $indexOfArray: ['$departments._id', '$$this.departments'],
+                      },
+                    ],
+                  },
+                },
+              ],
+            },
+          },
+        },
+      },
+    },
+  ]);
+  return data;
 }
 
 export async function getFacultyById(id: string): Promise<Faculty> {

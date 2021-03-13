@@ -7,6 +7,7 @@ const job = new CronJob('* * 1 * *', async () => {
   const programs = await ProgramModel.find({
     nextAccreditationDate: { $lte: new Date(new Date().setFullYear(new Date().getFullYear() + 1)) },
   });
+  console.log('sending...');
   // send auto emails to the respective programs
   programs.forEach(async (program) => {
     await sendAccreditationAlert(program);
