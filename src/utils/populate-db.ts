@@ -45,6 +45,7 @@ export async function populateDb() {
       });
     }
   } else {
+    // drop programs and users and create everything fresh
     await ProgramModel.deleteMany({});
     await ProgramModel.insertMany(programs);
 
